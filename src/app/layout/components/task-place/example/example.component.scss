@@ -1,0 +1,9 @@
+@use 'src/assets/style/mixins.scss';
+
+.example{
+  width: calc(100% - 10px);
+  height: 38vh;
+  background-color: red;
+  margin: auto;
+  @include mixins.flex(space-around,space-around,column);
+}
