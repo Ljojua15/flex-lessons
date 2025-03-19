@@ -7,7 +7,7 @@ import {ResultPlaceComponent} from './layout/components/result-place/result-plac
 
 @Component({
   selector: 'flex-lesson-root',
-  imports: [RouterOutlet, LayoutHeaderComponent, LayoutBodyComponent, LayoutFooterComponent, ResultPlaceComponent],
+  imports: [LayoutHeaderComponent, LayoutBodyComponent, LayoutFooterComponent, ResultPlaceComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
