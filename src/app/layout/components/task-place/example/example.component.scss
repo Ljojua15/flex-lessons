@@ -1,4 +1,6 @@
+@use 'src/assets/style/variables.scss';
 @use 'src/assets/style/mixins.scss';
+
 
 .example{
   width: calc(100% - 10px);
@@ -6,4 +8,11 @@
   background-color: red;
   margin: auto;
   @include mixins.flex(space-around,space-around,column);
+
+  ul{
+    li{
+      font-family: variables.$second-font;
+      color: white;
+    }
+  }
 }

@@ -1,15 +1,76 @@
+@use 'src/assets/style/variables.scss';
 @use 'src/assets/style/mixins.scss';
 
 .coding{
+  position: relative;
   width: calc(100% - 10px);
   height: 38vh;
   background-color: #51730c;
   margin: auto;
-  @include mixins.flex(center,center,column);
-  textarea{
-    resize: none;
-    display: block;
-    width: calc(100% - 16px);
-    overflow: auto;
+  @include mixins.flex(center,center,row);
+  &__lines{
+    width: 4%;
+    height: 100%;
+    background-color: red;
+    @include mixins.flex(center,center,column);
+    ul{
+
+      height: 100%;
+      @include mixins.flex(center,center,column);
+      gap: 1%;
+      li{
+        font-size: 20px;
+        height: 30px;
+      }
+    }
   }
+  &__write-place{
+    width: 96%;
+    height: 100%;
+    background-color: blue;
+    ul{
+      width: 96%;
+      height: 100%;
+      @include mixins.flex(center,center,column);
+      gap: 1%;
+      li{
+        padding-left: 40px;
+        width: 96%;
+        height: 30px;
+        font-size: 20px;
+        font-family: variables.$second-font;
+        textarea{
+          resize: none;
+          display: block;
+          width: calc(100% - 16px);
+          overflow: hidden;
+          font-size: 20px;
+          border: none;
+        }
+      }
+      li:first-child {
+        padding-left: unset;
+      }
+      li:nth-child(4) {
+        padding-left: unset;
+      }
+    }
+  }
+  button{
+    position: absolute;
+    border: none;
+    width: 16%;
+    height: 10%;
+    font-family: variables.$second-font;
+    @include mixins.flex(center,center,column);
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    bottom: 10px;
+    right: 20px;
+  }
+  button:hover{
+  background-color: red;
+     }
 }
+

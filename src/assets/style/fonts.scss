@@ -1,0 +1,12 @@
+$fonts : './assets/default/fonts/';
+
+@mixin project-font($name){
+  @font-face {
+    font-family: $name;
+    src: url($fonts + $name + '.ttf') format('truetype');
+  }
+}
+
+
+@include project-font(dm-zviadi-25230983714);
+@include project-font(DM-Maro-67525406225);
