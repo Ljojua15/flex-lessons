@@ -1,11 +1,13 @@
 import {Component, effect, inject, signal} from '@angular/core';
 import {CoddingService} from '../../../lib/core/services/codding.service';
-import {CommonModule} from '@angular/common';
+import {CommonModule, NgStyle} from '@angular/common';
 import {FormsModule} from '@angular/forms';
 
 @Component({
   selector: 'app-result-place',
-  imports: [CommonModule,FormsModule],
+  imports: [
+    NgStyle
+  ],
   templateUrl: './result-place.component.html',
   styleUrl: './result-place.component.scss'
 })

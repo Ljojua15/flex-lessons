@@ -17,9 +17,9 @@
     <ul>
       <li>  <pre>#khinkali {{'{'}}</pre></li>
       <li>display: flex;</li>
-      <li>    <textarea type="text" [formControl]="name"  id="code" autofocus="" autocapitalize="none" spellcheck="false" style="height: 24px;"></textarea></li>
+      <li>    <textarea type="text" [formControl]="code"  id="code" autofocus="" autocapitalize="none" spellcheck="false" [style]="$lessonArray$()()"></textarea></li>
       <li>{{'}'}}</li>
-      <li></li>
+      <li>{{$lessonArray$()()}}</li>
       <li></li>
       <li></li>
       <li></li>

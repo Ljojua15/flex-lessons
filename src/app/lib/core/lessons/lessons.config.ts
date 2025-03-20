@@ -27,6 +27,11 @@ export const LESSONS_CONFIG = {
       {
         answer: "flex"
       }
+    ],
+    heights: [
+      {
+        height: '48px'
+      }
     ]
   },
   2: {
@@ -53,6 +58,11 @@ export const LESSONS_CONFIG = {
     answers: [
       {
         answer: "justify-content"
+      }
+    ],
+    heights: [
+      {
+        height: '24px'
       }
     ]
   },

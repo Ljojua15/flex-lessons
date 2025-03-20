@@ -8,8 +8,7 @@ import {single} from 'rxjs';
 export class LessonsService {
   private lessonsConfig:any = LESSONS_CONFIG;
 
-  // სიგნალი მიმდინარე დონის ID-ისთვის
-  currentLevel = signal<number>(5);
+  currentLevel = signal<number>(1);
 
 
   get currentLesson():any {

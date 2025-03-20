@@ -1,11 +1,13 @@
 import {Component, computed, effect, inject, signal} from '@angular/core';
 import {LessonsService} from '../../../../lib/core/services/lessons.service';
-import {CommonModule} from '@angular/common';
+import {CommonModule, NgForOf} from '@angular/common';
 import {FormsModule} from '@angular/forms';
 
 @Component({
   selector: 'flex-lesson-example',
-  imports: [CommonModule,FormsModule],
+  imports: [
+    NgForOf
+  ],
   templateUrl: './example.component.html',
   styleUrl: './example.component.scss'
 })
