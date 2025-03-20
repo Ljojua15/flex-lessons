@@ -10,9 +10,13 @@
   @include mixins.flex(space-around,space-around,column);
 
   ul{
+    padding:20px;
+    @include mixins.flex(flex-start,center,column);
+    gap: 10px;
     li{
-      font-family: variables.$second-font;
+      font-family: sans-serif;
       color: white;
+
     }
   }
 }

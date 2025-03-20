@@ -1,5 +1,54 @@
+@use 'src/assets/style/variables.scss';
+@use 'src/assets/style/mixins.scss';
+
 .header{
   width: 100%;
   height: 8vh;
   background-color: red;
+  @include mixins.flex(center, space-around, row);
+  &--name{
+    font-size: 30px;
+    font-family: variables.$second-font;
+    span{
+      font-weight: bold;
+    };
+  }
+  &__levels{
+    max-width: 50%;
+    width: 40%;
+    height: 60%;
+    background-color: green;
+    @include mixins.flex(center, center, row);
+    &--left{
+      width: 15%;
+      height: 100%;
+      background-color: blue;
+      @include mixins.flex(center, center, row);
+      font-size: 30px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    &--content{
+      width: 70%;
+      height: 100%;
+      background-color: blue;
+      border-left: 1px solid white;
+      border-right: 1px solid white;
+      @include mixins.flex(center, center, row);
+      font-family: variables.$main-font;
+      font-size: 16px;
+      font-weight: bold;
+      color:white;
+      cursor: pointer;
+    }
+    &--right{
+      width: 15%;
+      height: 100%;
+      background-color: blue;
+      @include mixins.flex(center, center, row);
+      font-size: 30px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
 }

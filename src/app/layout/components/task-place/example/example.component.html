@@ -1,12 +1,7 @@
 <div class="example">
-  <h1>Welcome to Flexbox Froggy, a game where you help Froggy and friends by writing CSS code! Guide this frog to the lilypad on the right by using the justify-content property, which aligns items horizontally and accepts the following values:</h1>
   <ul>
-    <li>flex-start: Items align to the left side of the container.</li>
-    <li>flex-end: Items align to the right side of the container.</li>
-    <li>center: Items align at the center of the container.</li>
-    <li>space-between: Items display with equal spacing between them.</li>
-    <li>ტესტი</li>
+    <li *ngFor="let item of $changedText$()">
+      {{ item.text }}
+    </li>
   </ul>
-
-  <h3>For example, justify-content: flex-end; will move the frog to the right. </h3>
 </div>

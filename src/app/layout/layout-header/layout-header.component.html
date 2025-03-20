@@ -1,3 +1,8 @@
 <div class="header">
-  test header
+  <div class="header--name">ხინკალი <span>FLEXBOX</span></div>
+  <div class="header__levels">
+    <div class="header__levels--left"  (click)="changeLevel('prev')" ><</div>
+    <div class="header__levels--content">ლეველები: {{$currentLevel$()()}}/24 </div>
+    <div class="header__levels--right" (click)="changeLevel('next')">></div>
+  </div>
 </div>
