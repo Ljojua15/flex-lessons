@@ -9,11 +9,14 @@ import {LessonsService} from '../../lib/core/services/lessons.service';
   styleUrl: './layout-header.component.scss'
 })
 export class LayoutHeaderComponent {
-  private readonly lessonsService = inject(LessonsService);
+  public readonly lessonsService = inject(LessonsService);
   public $currentLevel$ = computed(() =>{
     return this.lessonsService.currentLevel
   })
 
+  public $lessonLength$ = computed(() =>{
+    return this.lessonsService.lessonLength
+  })
 
   changeLevel(direction: 'prev' | 'next') {
     this.lessonsService.changeLevel(direction);

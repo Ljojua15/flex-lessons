@@ -1,4 +1,4 @@
-import {Component, effect, inject, signal} from '@angular/core';
+import {Component, computed, effect, inject, signal} from '@angular/core';
 import {CoddingService} from '../../../lib/core/services/codding.service';
 import {CommonModule, NgStyle} from '@angular/common';
 import {FormsModule} from '@angular/forms';

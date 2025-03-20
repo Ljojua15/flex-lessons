@@ -5,7 +5,7 @@
 .example{
   width: calc(100% - 10px);
   height: 38vh;
-  background-color: red;
+  background-color: #43A047;
   margin: auto;
   @include mixins.flex(space-around,space-around,column);
 

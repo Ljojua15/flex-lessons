@@ -14,11 +14,8 @@ export class CodingComponent{
   private readonly coddingService = inject(CoddingService);
   private readonly lessonsService = inject(LessonsService)
 
-  public  valueTest!: string
   public  code = new FormControl('');
-  public $lessonArray$ = computed(() => {
-    return this.lessonsService.currentLesson?.heights
-  })
+
 
   ngOnInit(){
     this.code.valueChanges.pipe(debounceTime(500)).subscribe(value => {

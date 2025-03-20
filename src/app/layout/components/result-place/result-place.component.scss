@@ -1,15 +1,37 @@
 @use 'src/assets/style/variables.scss';
 @use 'src/assets/style/mixins.scss';
 
-.result-place{
+.result{
   width: 100%;
-  height: 50%;
+  height: 100%;
   background-color: black;
-  display: flex;
-  &__khinkali{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: white;
+  @include mixins.flex(center,center,column);
+  position: relative;
+  &__place{
+    width: 100%;
+    height: 50%;
+    background-color: transparent;
+    display: flex;
+    &--khinkali{
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: white;
+      z-index: 2;
+    }
+  }
+  &__mission{
+    width: 100%;
+    height: 50%;
+    background-color: red;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    &--dafa{
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: green;
+    }
   }
 }
