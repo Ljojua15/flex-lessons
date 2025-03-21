@@ -3,10 +3,11 @@ import {FormControl, FormGroup, FormsModule, ReactiveFormsModule} from '@angular
 import {CoddingService} from '../../../../lib/core/services/codding.service';
 import {debounceTime} from 'rxjs';
 import {LessonsService} from '../../../../lib/core/services/lessons.service';
+import {CommonModule} from '@angular/common';
 
 @Component({
   selector: 'flex-lesson-coding',
-  imports: [FormsModule,   ReactiveFormsModule],
+  imports: [FormsModule,   ReactiveFormsModule,CommonModule,],
   templateUrl: './coding.component.html',
   styleUrl: './coding.component.scss'
 })
@@ -30,6 +31,8 @@ export class CodingComponent{
       this.coddingService.$myCode$.set(this.code.value);
     });
   }
+
+  public $codePlace$ = this.lessonsService.codePlace;
 
   public enterCode(){
     console.log('test')

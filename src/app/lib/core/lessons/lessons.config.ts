@@ -61,6 +61,48 @@ export const LESSONS_CONFIG = {
         alignItems: "center",
         justifyContent: "space-between",
       },
+    ],
+    codePlace: [
+      {
+        id: 1,
+        text: "#khinkali {",
+      },
+      {
+        id: 2,
+        text: "display: flex;",
+      },
+      {
+        id: 3,
+        text: "area",
+      },
+      {
+        id: 4,
+        text: "",
+      },
+      {
+        id: 5,
+        text: "",
+      },
+      {
+        id: 6,
+        text: "}",
+      },
+      {
+        id: 7,
+        text: "",
+      },
+      {
+        id: 8,
+        text: "",
+      },
+      {
+        id: 9,
+        text: "",
+      },
+      {
+        id: 10,
+        text: "",
+      }
     ]
   },
   2: {
@@ -116,6 +158,48 @@ export const LESSONS_CONFIG = {
         alignItems: "center",
         justifyContent: "space-around",
       },
+    ],
+    codePlace: [
+      {
+        id: 1,
+        text: "#khinkali {",
+      },
+      {
+        id: 2,
+        text: "display: flex;",
+      },
+      {
+        id: 3,
+        text: "area",
+      },
+      {
+        id: 4,
+        text: "",
+      },
+      {
+        id: 5,
+        text: "",
+      },
+      {
+        id: 6,
+        text: "}",
+      },
+      {
+        id: 7,
+        text: "",
+      },
+      {
+        id: 8,
+        text: "",
+      },
+      {
+        id: 9,
+        text: "",
+      },
+      {
+        id: 10,
+        text: "",
+      }
     ]
   },
 
@@ -167,6 +251,49 @@ export const LESSONS_CONFIG = {
         justifyContent: "space-between",
       },
     ]
+    ,
+    codePlace: [
+      {
+        id: 1,
+        text: "#khinkali {",
+      },
+      {
+        id: 2,
+        text: "display: flex;",
+      },
+      {
+        id: 3,
+        text: "area",
+      },
+      {
+        id: 4,
+        text: "",
+      },
+      {
+        id: 5,
+        text: "",
+      },
+      {
+        id: 6,
+        text: "}",
+      },
+      {
+        id: 7,
+        text: "",
+      },
+      {
+        id: 8,
+        text: "",
+      },
+      {
+        id: 9,
+        text: "",
+      },
+      {
+        id: 10,
+        text: "",
+      }
+    ]
   },
 
   4: {
@@ -207,6 +334,49 @@ export const LESSONS_CONFIG = {
         alignItems: "stretch",
         justifyContent: "space-between",
       },
+    ]
+    ,
+    codePlace: [
+      {
+        id: 1,
+        text: "#khinkali {",
+      },
+      {
+        id: 2,
+        text: "display: flex;",
+      },
+      {
+        id: 3,
+        text: "area",
+      },
+      {
+        id: 4,
+        text: "",
+      },
+      {
+        id: 5,
+        text: "",
+      },
+      {
+        id: 6,
+        text: "}",
+      },
+      {
+        id: 7,
+        text: "",
+      },
+      {
+        id: 8,
+        text: "",
+      },
+      {
+        id: 9,
+        text: "",
+      },
+      {
+        id: 10,
+        text: "",
+      }
     ]
   },
 
@@ -264,6 +434,49 @@ export const LESSONS_CONFIG = {
         justifyContent: "space-around",
       },
     ]
+    ,
+    codePlace: [
+      {
+        id: 1,
+        text: "#khinkali {",
+      },
+      {
+        id: 2,
+        text: "display: flex;",
+      },
+      {
+        id: 3,
+        text: "area",
+      },
+      {
+        id: 4,
+        text: "",
+      },
+      {
+        id: 5,
+        text: "",
+      },
+      {
+        id: 6,
+        text: "}",
+      },
+      {
+        id: 7,
+        text: "",
+      },
+      {
+        id: 8,
+        text: "",
+      },
+      {
+        id: 9,
+        text: "",
+      },
+      {
+        id: 10,
+        text: "",
+      }
+    ]
   },
 
   6: {
@@ -305,6 +518,49 @@ export const LESSONS_CONFIG = {
         justifyContent: "center",
       },
     ]
+    ,
+    codePlace: [
+      {
+        id: 1,
+        text: "#khinkali {",
+      },
+      {
+        id: 2,
+        text: "display: flex;",
+      },
+      {
+        id: 3,
+        text: "area",
+      },
+      {
+        id: 4,
+        text: "",
+      },
+      {
+        id: 5,
+        text: "",
+      },
+      {
+        id: 6,
+        text: "}",
+      },
+      {
+        id: 7,
+        text: "",
+      },
+      {
+        id: 8,
+        text: "",
+      },
+      {
+        id: 9,
+        text: "",
+      },
+      {
+        id: 10,
+        text: "",
+      }
+    ]
   },
 
   7: {
@@ -345,6 +601,49 @@ export const LESSONS_CONFIG = {
         alignItems: "center",
         justifyContent: "space-around",
       },
+    ]
+    ,
+    codePlace: [
+      {
+        id: 1,
+        text: "#khinkali {",
+      },
+      {
+        id: 2,
+        text: "display: flex;",
+      },
+      {
+        id: 3,
+        text: "area",
+      },
+      {
+        id: 4,
+        text: "",
+      },
+      {
+        id: 5,
+        text: "",
+      },
+      {
+        id: 6,
+        text: "}",
+      },
+      {
+        id: 7,
+        text: "",
+      },
+      {
+        id: 8,
+        text: "",
+      },
+      {
+        id: 9,
+        text: "",
+      },
+      {
+        id: 10,
+        text: "",
+      }
     ]
   },
 
@@ -396,6 +695,48 @@ export const LESSONS_CONFIG = {
       {
         flexDirection: "row",
       },
+    ],
+    codePlace: [
+      {
+        id: 1,
+        text: "#khinkali {",
+      },
+      {
+        id: 2,
+        text: "display: flex;",
+      },
+      {
+        id: 3,
+        text: "area",
+      },
+      {
+        id: 4,
+        text: "",
+      },
+      {
+        id: 5,
+        text: "",
+      },
+      {
+        id: 6,
+        text: "}",
+      },
+      {
+        id: 7,
+        text: "",
+      },
+      {
+        id: 8,
+        text: "",
+      },
+      {
+        id: 9,
+        text: "",
+      },
+      {
+        id: 10,
+        text: "",
+      }
     ]
   },
 
@@ -435,6 +776,48 @@ export const LESSONS_CONFIG = {
       {
         flexDirection: "column",
       },
+    ],
+    codePlace: [
+      {
+        id: 1,
+        text: "#khinkali {",
+      },
+      {
+        id: 2,
+        text: "display: flex;",
+      },
+      {
+        id: 3,
+        text: "area",
+      },
+      {
+        id: 4,
+        text: "",
+      },
+      {
+        id: 5,
+        text: "",
+      },
+      {
+        id: 6,
+        text: "}",
+      },
+      {
+        id: 7,
+        text: "",
+      },
+      {
+        id: 8,
+        text: "",
+      },
+      {
+        id: 9,
+        text: "",
+      },
+      {
+        id: 10,
+        text: "",
+      }
     ]
   },
 
@@ -479,6 +862,48 @@ export const LESSONS_CONFIG = {
         flexDirection: "row-reverse",
         justifyContent: "space-between",
       },
+    ],
+    codePlace: [
+      {
+        id: 1,
+        text: "#khinkali {",
+      },
+      {
+        id: 2,
+        text: "display: flex;",
+      },
+      {
+        id: 3,
+        text: "area",
+      },
+      {
+        id: 4,
+        text: "",
+      },
+      {
+        id: 5,
+        text: "",
+      },
+      {
+        id: 6,
+        text: "}",
+      },
+      {
+        id: 7,
+        text: "",
+      },
+      {
+        id: 8,
+        text: "",
+      },
+      {
+        id: 9,
+        text: "",
+      },
+      {
+        id: 10,
+        text: "",
+      }
     ]
   }
   // 11: {

@@ -31,6 +31,8 @@ export class LessonsService {
     return this.currentLesson?.targetDivsStyle?.[0] || {};
   });
 
+  public codePlace = computed(() => this.currentLesson?.codePlace || []);
+
 
   changeLevel(direction: 'prev' | 'next') {
     const newLevel =
