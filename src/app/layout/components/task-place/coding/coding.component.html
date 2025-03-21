@@ -27,5 +27,8 @@
       <li></li>
     </ul>
   </div>
-  <button>შემდეგი</button>
+  <button class="coding__write-place--btn"
+  [class.coding__write-place--btn-active]="$isCorrect$()()"
+          (click)="enterCode()"
+  >შემდეგი</button>
 </div>
