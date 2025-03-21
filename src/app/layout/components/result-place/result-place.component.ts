@@ -1,20 +1,26 @@
 import {Component, computed, effect, inject, signal} from '@angular/core';
 import {CoddingService} from '../../../lib/core/services/codding.service';
 import {CommonModule, NgStyle} from '@angular/common';
-import {FormsModule} from '@angular/forms';
+import {LessonsService} from '../../../lib/core/services/lessons.service';
 
 @Component({
   selector: 'app-result-place',
   imports: [
-    NgStyle
+    NgStyle,
+    CommonModule
   ],
   templateUrl: './result-place.component.html',
   styleUrl: './result-place.component.scss'
 })
 export class ResultPlaceComponent {
   public readonly coddingService = inject(CoddingService)
+  public readonly lessonsService = inject(LessonsService)
   public writtenCode!: string
 
+  public $movingDivs$ = this.lessonsService.movingDivs
+
+  public $targetDivs$ = this.lessonsService.targetDivs
+  public $targetDivsStyle$ = this.lessonsService.targetDivsStyle
   constructor() {
     effect(() => {
       const code = this.coddingService.$myCode$();
@@ -22,6 +28,7 @@ export class ResultPlaceComponent {
         this.writtenCode = code;
       }
     });
+
   }
 
   parseStyle(styleString: string): { [key: string]: string } {

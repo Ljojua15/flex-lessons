@@ -20,7 +20,6 @@ export class LayoutHeaderComponent {
 
   changeLevel(direction: 'prev' | 'next') {
     this.lessonsService.changeLevel(direction);
-    console.log('test')
   }
 
 }

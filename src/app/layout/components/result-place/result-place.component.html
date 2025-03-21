@@ -1,10 +1,15 @@
 <div class="result">
   <div class="result__place"  [ngStyle]="parseStyle(writtenCode)">
-    <div class="result__place--khinkali"></div>
+    <div class="result__place--khinkali"
+         [ngStyle]="{'background-color': div.backgroundColor}"
+         *ngFor="let div of $targetDivs$()"></div>
   </div>
-  <div class="result__mission">
-    <div class="result__mission--dafa"></div>
-    <div class="result__mission--dafa"></div>
+  <div class="result__mission"
+       [ngStyle]="$targetDivsStyle$()">
+
+  <div class="result__mission--dafa"
+         *ngFor="let div of $targetDivs$()"
+         [ngStyle]="{'background-color': div.backgroundColor}"></div>
   </div>
 
 </div>
