@@ -23,9 +23,6 @@ export class CodingComponent{
     return this.coddingService.isCodeCorrect()
   })
 
-  constructor() {
-    console.log(this.$isCorrect$()())
-  }
 
 
   ngOnInit(){
@@ -38,8 +35,8 @@ export class CodingComponent{
 
 
 
-  public enterCode(){
-    console.log('test')
+  public enterCode(direction: 'next'){
+
   }
 
 

@@ -35,11 +35,11 @@ export class LessonsService {
 
   public codePlace = computed(() => this.currentLesson?.codePlace || []);
 
-  resetCodeControl() {
+  public resetCodeControl() {
     this.codeControl().setValue('');
   }
 
-  changeLevel(direction: 'prev' | 'next') {
+  public changeLevel(direction: 'prev' | 'next') {
     const newLevel =
       direction === 'next' ? this.currentLevel() + 1 : this.currentLevel() - 1;
     if (newLevel >= 1 && newLevel <= this.lessonLength) {

@@ -16,8 +16,6 @@ export class CoddingService {
 
     return signal(answers.some((answerObj: { [key: string]: unknown }) => {
       const answerString = this.normalizeStyles(this.convertJsonToCssString(answerObj));
-      console.log(answerString, 'Answer String');
-      console.log(myCode, 'My Code');
       return myCode === answerString;
     }))
   }
@@ -48,10 +46,10 @@ export class CoddingService {
       .join('; ');
   }
 
-  public enterMyCode(){
-    if(!this.isCodeCorrect()) return '';
-    console.log(this.isCodeCorrect())
-    return this.lessonsService.currentLevel() + 1
+  public enterMyCode(direction:'next'){
+    if(this.isCodeCorrect()()){
+    return this.lessonsService.changeLevel(direction)
+    }return this.lessonsService.currentLevel()
   }
 
 }
