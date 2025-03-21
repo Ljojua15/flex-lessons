@@ -20,6 +20,7 @@ export class LayoutHeaderComponent {
 
   changeLevel(direction: 'prev' | 'next') {
     this.lessonsService.changeLevel(direction);
+    this.lessonsService.resetCodeControl();
   }
 
 }

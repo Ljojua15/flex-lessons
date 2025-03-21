@@ -1,14 +1,16 @@
 import {computed, Injectable, signal} from '@angular/core';
 import {LESSONS_CONFIG} from '../lessons/lessons.config';
 import {single} from 'rxjs';
+import {FormControl} from '@angular/forms';
 
 @Injectable({
   providedIn: 'root'
 })
 export class LessonsService {
   private lessonsConfig:any = LESSONS_CONFIG;
-
+  public codeControl = signal<FormControl>(new FormControl(''));
   currentLevel = signal<number>(1);
+
   public lessonLength:number = Object.keys(LESSONS_CONFIG).length;
 
   get currentLesson():any {
@@ -33,6 +35,9 @@ export class LessonsService {
 
   public codePlace = computed(() => this.currentLesson?.codePlace || []);
 
+  resetCodeControl() {
+    this.codeControl().setValue('');
+  }
 
   changeLevel(direction: 'prev' | 'next') {
     const newLevel =
