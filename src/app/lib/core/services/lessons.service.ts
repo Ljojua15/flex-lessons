@@ -45,5 +45,6 @@ export class LessonsService {
     if (newLevel >= 1 && newLevel <= this.lessonLength) {
       this.currentLevel.set(newLevel);
     }
+
   }
 }

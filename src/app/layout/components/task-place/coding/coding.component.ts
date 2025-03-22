@@ -35,8 +35,8 @@ export class CodingComponent{
 
 
 
-  public enterCode(direction: 'next'){
-
+  public enterCode(direction: 'done'){
+    this.coddingService.enterMyCode(direction);
   }
 
 

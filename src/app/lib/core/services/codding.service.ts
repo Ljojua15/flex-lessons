@@ -46,10 +46,13 @@ export class CoddingService {
       .join('; ');
   }
 
-  public enterMyCode(direction:'next'){
+  public enterMyCode(direction:'done'){
     if(this.isCodeCorrect()()){
-    return this.lessonsService.changeLevel(direction)
-    }return this.lessonsService.currentLevel()
+      const rightAnswer = direction === 'done' ? this.lessonsService.currentLevel() + 1 : this.lessonsService.currentLevel();
+      this.lessonsService.currentLevel.set(rightAnswer);
+      this.lessonsService.resetCodeControl()
+    }
+    console.log(this.lessonsService.currentLevel());
   }
 
 }
