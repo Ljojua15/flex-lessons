@@ -4,9 +4,15 @@
     <div class="header__levels--left"
          [class.header__levels--disable]="$currentLevel$()() === 1"
          (click)="changeLevel('prev')" ><</div>
-    <div class="header__levels--content">ლეველები: {{$currentLevel$()()}}/{{$lessonLength$()}} </div>
+    <div class="header__levels--content" (click)="openLevelPopup()"><p>ლეველები: {{$currentLevel$()()}}/{{$lessonLength$()}}</p>
+      <div class="header__popup" *ngIf="isLevelOpen()">
+        <flex-lesson-level-popup />
+      </div></div>
     <div class="header__levels--right"
          [class.header__levels--disable]="$currentLevel$()() === $lessonLength$()"
          (click)="changeLevel('next')">></div>
   </div>
+<!--  <div class="header__popup" *ngIf="isLevelOpen()">-->
+<!--    <flex-lesson-level-popup />-->
+<!--  </div>-->
 </div>

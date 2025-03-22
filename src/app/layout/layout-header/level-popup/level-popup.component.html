@@ -1,0 +1,9 @@
+<div class="level-popup">
+  <div class="level-popup__cont">
+
+      <div class="level-popup__cont--items"  *ngFor="let id of idOfLessons"
+      [ngClass]="{'level-popup__cont--active': id === $activeItem$()()}"
+      >{{id}}</div>
+
+  </div>
+</div>
