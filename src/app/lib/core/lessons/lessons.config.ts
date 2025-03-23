@@ -749,6 +749,7 @@ export const LESSONS_CONFIG = {
     answers: [
       {
         flexDirection: "column;",
+        justifyContent: "center"
       },
     ],
     heights: [

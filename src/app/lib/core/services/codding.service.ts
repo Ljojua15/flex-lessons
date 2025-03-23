@@ -52,7 +52,6 @@ export class CoddingService {
       this.lessonsService.currentLevel.set(rightAnswer);
       this.lessonsService.resetCodeControl()
     }
-    console.log(this.lessonsService.currentLevel());
   }
 
 }

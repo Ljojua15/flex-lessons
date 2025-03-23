@@ -13,7 +13,6 @@ import {LevelPopupComponent} from './level-popup/level-popup.component';
 export class LayoutHeaderComponent {
   public readonly lessonsService = inject(LessonsService);
   public $currentLevel$ = computed(() =>{
-    console.log(this.lessonsService.currentLevel())
     return this.lessonsService.currentLevel
   })
 

@@ -12,7 +12,7 @@ import {LessonsService} from '../../../lib/core/services/lessons.service';
 export class LevelPopupComponent {
   public readonly lessonsService = inject(LessonsService);
   public readonly idOfLessons: number[] = []
-
+  public isLevelChanged = false;
   constructor() {
     this.idOfLessons = Array.from({ length: this.lessonsService.lessonLength }, (_, i) => i+1);
     console.log(this.$activeItem$()())
@@ -21,5 +21,12 @@ export class LevelPopupComponent {
   public $activeItem$ = computed(() => {
     return this.lessonsService.currentLevel
   });
+
+  public changeLevelFromButton(id:number){
+    this.lessonsService.currentLevel.set(id)
+    this.isLevelChanged = true;
+    this.lessonsService.resetCodeControl();
+    console.log(id)
+  }
 
 }

@@ -17,6 +17,8 @@ export class ResultPlaceComponent {
   public readonly lessonsService = inject(LessonsService)
   public writtenCode!: string
 
+  public testImg = './assets/images/pinki.svg'
+
   public $movingDivs$ = this.lessonsService.movingDivs
 
   public $targetDivs$ = this.lessonsService.targetDivs

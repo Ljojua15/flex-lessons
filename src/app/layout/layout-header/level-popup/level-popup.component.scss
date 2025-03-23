@@ -4,7 +4,6 @@
 .level-popup{
   width: 100%;
   height: 100%;
-  background-color: red;
   @include mixins.flex(center, center, row);
   overflow-y: auto;
   &::-webkit-scrollbar {  width: 6px;}
@@ -20,11 +19,13 @@
     &--items{
       width: 30px;
       height: 30px;
-      border: 1px solid black;
+      border: 1px solid white;
       border-radius: 50%;
       @include mixins.flex(center, center, row);
       cursor: pointer;
       font-family: sans-serif;
+      color: black;
+      background-color: blanchedalmond;
     }
     &--active{
       background-color: #1c8050;
