@@ -1,17 +1,9 @@
 .app{
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  &__task{
-    width: 50%;
-    height: 100vh;
-
-  }
-  &__result{
-    width: 50%;
-    height: 100vh;
-    background-color: #43A047;
-  }
+  margin: auto;
+  background-color: blue;
 }

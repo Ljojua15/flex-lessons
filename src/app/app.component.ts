@@ -4,10 +4,11 @@ import {LayoutHeaderComponent} from './layout/layout-header/layout-header.compon
 import {LayoutBodyComponent} from './layout/layout-body/layout-body.component';
 import {LayoutFooterComponent} from './layout/layout-footer/layout-footer.component';
 import {ResultPlaceComponent} from './layout/components/result-place/result-place.component';
+import {KhinkaliFlexComponent} from './all-lessons/khinkali-flex/khinkali-flex.component';
 
 @Component({
   selector: 'flex-lesson-root',
-  imports: [LayoutHeaderComponent, LayoutBodyComponent, LayoutFooterComponent, ResultPlaceComponent],
+  imports: [ KhinkaliFlexComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

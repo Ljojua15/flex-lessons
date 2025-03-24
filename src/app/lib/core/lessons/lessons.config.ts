@@ -822,6 +822,91 @@ export const LESSONS_CONFIG = {
     ]
   },
 
+  11: {
+    texts: [
+      {
+        text: "დაეხმარეთ ხინკლებს თავიანთ ლილიპადებზე მოხვედრაში. მიუხედავად იმისა, რომ ისინი ახლოს არიან, დასჭირდებათ `flex-direction` და `justify-content` ერთად."
+      },
+      {
+        text: "გაითვალისწინეთ, რომ თუ მიმართულებას შეცვლით `row-reverse` ან `column-reverse`-ზე, საწყისი და ბოლო პოზიციებიც შეიცვლება."
+      }
+    ],
+    answers: [
+      {
+        flexDirection: "row-reverse;",
+        justifyContent: "space-between;",
+      },
+    ],
+    heights: [
+      {
+        height: '90px'
+      }
+    ],
+    movingDivs: [
+      {
+        backgroundColor: "orange",
+      },
+      {
+        backgroundColor: "red",
+      },
+    ],
+    targetDivs: [
+      {
+        backgroundColor: "orange",
+      },
+      {
+        backgroundColor: "red",
+      },
+    ],
+    targetDivsStyle: [
+      {
+        flexDirection: "row-reverse",
+        justifyContent: "space-between",
+      },
+    ],
+    codePlace: [
+      {
+        id: 1,
+        text: "#khinkali {",
+      },
+      {
+        id: 2,
+        text: "display: flex;",
+      },
+      {
+        id: 3,
+        text: "area",
+      },
+      {
+        id: 4,
+        text: "",
+      },
+      {
+        id: 5,
+        text: "",
+      },
+      {
+        id: 6,
+        text: "}",
+      },
+      {
+        id: 7,
+        text: "",
+      },
+      {
+        id: 8,
+        text: "",
+      },
+      {
+        id: 9,
+        text: "",
+      },
+      {
+        id: 10,
+        text: "",
+      }
+    ]
+  },
   10: {
     texts: [
       {
@@ -906,7 +991,93 @@ export const LESSONS_CONFIG = {
         text: "",
       }
     ]
-  }
+  },
+  12: {
+    texts: [
+      {
+        text: "დაეხმარეთ ხინკლებს თავიანთ ლილიპადებზე მოხვედრაში. მიუხედავად იმისა, რომ ისინი ახლოს არიან, დასჭირდებათ `flex-direction` და `justify-content` ერთად."
+      },
+      {
+        text: "გაითვალისწინეთ, რომ თუ მიმართულებას შეცვლით `row-reverse` ან `column-reverse`-ზე, საწყისი და ბოლო პოზიციებიც შეიცვლება."
+      }
+    ],
+    answers: [
+      {
+        flexDirection: "row-reverse;",
+        justifyContent: "space-between;",
+      },
+    ],
+    heights: [
+      {
+        height: '90px'
+      }
+    ],
+    movingDivs: [
+      {
+        backgroundColor: "orange",
+      },
+      {
+        backgroundColor: "red",
+      },
+    ],
+    targetDivs: [
+      {
+        backgroundColor: "orange",
+      },
+      {
+        backgroundColor: "red",
+      },
+    ],
+    targetDivsStyle: [
+      {
+        flexDirection: "row-reverse",
+        justifyContent: "space-between",
+      },
+    ],
+    codePlace: [
+      {
+        id: 1,
+        text: "#khinkali {",
+      },
+      {
+        id: 2,
+        text: "display: flex;",
+      },
+      {
+        id: 3,
+        text: "area",
+      },
+      {
+        id: 4,
+        text: "",
+      },
+      {
+        id: 5,
+        text: "",
+      },
+      {
+        id: 6,
+        text: "}",
+      },
+      {
+        id: 7,
+        text: "",
+      },
+      {
+        id: 8,
+        text: "",
+      },
+      {
+        id: 9,
+        text: "",
+      },
+      {
+        id: 10,
+        text: "",
+      }
+    ]
+  },
+
   // 11: {
   //   texts: [
   //     {

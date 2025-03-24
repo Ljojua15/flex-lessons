@@ -1,0 +1,25 @@
+
+@use 'src/assets/style/variables.scss';
+@use 'src/assets/style/mixins.scss';
+:host{
+  display: block;
+  width: 100%;
+}
+.khinkali-flex{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  &__task{
+    width: 50%;
+    height: 100vh;
+
+  }
+  &__result{
+    width: 50%;
+    height: 100vh;
+    background-color: #43A047;
+  }
+}

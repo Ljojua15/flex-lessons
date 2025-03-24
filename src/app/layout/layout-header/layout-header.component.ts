@@ -19,7 +19,6 @@ export class LayoutHeaderComponent {
   public readonly isLevelOpen = signal<boolean>(false);
 
   public $lessonLength$ = computed(() =>{
-    console.log(this.lessonsService.lessonLength)
     return this.lessonsService.lessonLength
   })
 
