@@ -1,43 +1,23 @@
 <div class="home">
   <div class="ag-format-container">
     <div class="ag-courses_box">
-      <div class="ag-courses_item">
-        <a href="#" class="ag-courses-item_link">
-          <div class="ag-courses-item_bg"></div>
+      <div class="ag-courses_item" *ngFor="let cards of cards">
+        <div class="ag-courses-item_link">
+          <div class="ag-courses-item_bg" ></div>
 
           <div class="ag-courses-item_title">
-            UI/Web&amp;Graph design for teenagers 11-17&#160;years old
+            {{cards.mainText}} - {{cards.lessonName}}
           </div>
 
           <div class="ag-courses-item_date-box">
-            Start:
+            {{cards.quantity}}
             <span class="ag-courses-item_date">
-            04.11.2022
+            {{cards.numbers}}
           </span>
           </div>
-        </a>
-      </div>
-
-
-
-      <div class="ag-courses_item">
-        <a href="#" class="ag-courses-item_link">
-          <div class="ag-courses-item_bg"></div>
-
-          <div class="ag-courses-item_title">
-            Annual package "Product+UX/UI+Graph designer&#160;2022"
-          </div>
-
-          <div class="ag-courses-item_date-box">
-            Start:
-            <span class="ag-courses-item_date">
-            04.11.2022
-          </span>
-          </div>
-        </a>
+        </div>
       </div>
     </div>
   </div>
-
 </div>
 

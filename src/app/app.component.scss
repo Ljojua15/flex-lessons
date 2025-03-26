@@ -1,9 +1,50 @@
-.app{
-  width: 100vw;
+//.app{
+//  width: 100vw;
+//  height: 100vh;
+//  display: flex;
+//  justify-content: center;
+//  align-items: center;
+//  margin: auto;
+//
+//}
+
+
+body {
+}
+
+.title {
+  font-size: 2.5rem;
+  font-family: "Lobster", cursive;
+}
+
+.app {
+  animation: scroll 100s linear infinite;
+  background-image: url("/assets/images/bg-image.png");
+  color: #eee;
   height: 100vh;
+  min-width: 360px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+}
 
+@keyframes scroll {
+  100% {
+    background-position: 0px -400%;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .wrapper {
+    animation: scroll 800s linear infinite;
+  }
+}
+
+@media (min-width: 670px) {
+  .title {
+    font-size: 5rem;
+  }
 }
