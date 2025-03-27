@@ -42,12 +42,12 @@ export const LESSONS_CONFIG = {
         backgroundColor: "blue",
       },
       {
-        backgroundColor: "black",
+        backgroundColor: "red",
       },
     ],
     targetDivs: [
       {
-        backgroundColor: "white",
+        backgroundColor: "pink",
       },
       {
         backgroundColor: "green",
