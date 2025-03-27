@@ -50,10 +50,10 @@ export const LESSONS_CONFIG = {
         backgroundColor: "pink",
       },
       {
-        backgroundColor: "green",
+        backgroundColor: "black",
       },
       {
-        backgroundColor: "black",
+        backgroundColor: "green",
       },
     ],
     targetDivsStyle: [
