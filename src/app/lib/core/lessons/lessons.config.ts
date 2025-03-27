@@ -36,10 +36,10 @@ export const LESSONS_CONFIG = {
     ],
     movingDivs: [
       {
-        backgroundColor: "white",
+        backgroundColor: "blue",
       },
       {
-        backgroundColor: "green",
+        backgroundColor: "blue",
       },
       {
         backgroundColor: "black",
