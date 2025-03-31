@@ -9,7 +9,7 @@ import {HomeComponent} from './home/home.component';
 
 @Component({
   selector: 'flex-lesson-root',
-  imports: [HomeComponent],
+  imports: [ KhinkaliFlexComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
