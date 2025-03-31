@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MwvadiFlexComponent } from './mwvadi-flex.component';
+import { MtsvadiGridComponent } from './mtsvadi-grid.component';
 
-describe('MwvadiFlexComponent', () => {
-  let component: MwvadiFlexComponent;
-  let fixture: ComponentFixture<MwvadiFlexComponent>;
+describe('MtsvadiGridComponent', () => {
+  let component: MtsvadiGridComponent;
+  let fixture: ComponentFixture<MtsvadiGridComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MwvadiFlexComponent]
+      imports: [MtsvadiGridComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(MwvadiFlexComponent);
+    fixture = TestBed.createComponent(MtsvadiGridComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
