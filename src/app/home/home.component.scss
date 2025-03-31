@@ -24,8 +24,8 @@ body {
   display: block;
   padding: 30px 20px;
   background-color: #121212;
-
-  overflow: hidden;
+  overflow: hidden;      /* Hides overflowing text */
+  text-overflow: ellipsis;
 
   position: relative;
 }

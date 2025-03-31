@@ -2,7 +2,8 @@
   <div class="ag-format-container">
     <div class="ag-courses_box">
       <div class="ag-courses_item" *ngFor="let cards of cards">
-        <div class="ag-courses-item_link">
+
+        <a href='{{cards.redirect}}' class="ag-courses-item_link">
           <div class="ag-courses-item_bg" ></div>
 
           <div class="ag-courses-item_title">
@@ -15,7 +16,7 @@
             {{cards.numbers}}
           </span>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   </div>
